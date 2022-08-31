@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>4 Pillars of OOP</title> 
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body> 
+
+  <header class="page__header">
+
+  <!-- Navigation starts as empty UL that will be populated with JS -->
+    <nav class="navbar__menu">  
+    <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="main__hero">
+      <h1>
+        The Four Pillars of Object-Oriented Programming
+        <br><span>A Blog by Kealan Parr
+        </span>
+      </h1>
+    </header>
+
+    <!-- Each Section has an ID (used for the anchor (link)) and 
+    a data attribute (an attribute) that will populate the li node. -->
+    <section id="section1" data-nav="Pillar1" class="your-active-class">
+      <div class="landing__container">
+        <h2>
+            Pillar 1: Abstraction
+        </h2>
+        <p>
+          If you had to understand every single function in a big codebase you would never code anything. It would take months to finish reading through it all. You can create a reusable, simple to understand, and easily changeable codebase by abstracting away certain details.
+        </p>
+        <p class="display_none_on_mobile display_none_on_tablet">          
+          To abstract something away means to hide away the perplexing details inside something. Maybe a prototype, or, sometimes a function. So when you do call the function you don't have to understand exactly what it is doing.
+        </p> 
+        <p class="display_none_on_mobile display_none_on_tablet">
+          That is what Abstraction is all about. Finding things that are similar in your code. Providing a generic function or object to serve multiple places and multiple concerns.
+        </p>
+      </div>
+    </section>
+
+    <section id="section2" data-nav="Pillar2">
+      <div class="landing__container">
+        <h2>
+            Pillar 2: Encapsulation
+        </h2>
+        <p>
+          The definition of encapsulation is "the action of enclosing something as if in a capsule". Encapsulation means that each object in your code should control its own state. State is the current "snapshot" of your object. The keys, the methods on your object, Boolean properties and so on. Removing access to parts of your code and making things private is exactly what Encapsulation is all about (often times, people refer to it as data hiding).
+        </p>
+        <p class="display_none_on_mobile">
+          Encapsulation can be applied by separating out long lines of code into smaller separate functions. Separate out those functions into modules. We hide away the data in a place nothing else needs access to, and cleanly expose what is needed.
+        </p>
+        <p class="display_none_on_mobile">
+          That is Encapsulation is a nutshell. Binding your data to something, whether it's a class, object, module or function, and doing your best to keep it as private as you reasonably can.
+        </p>
+      </div>
+    </section>
+        
+    <section id="section3"
+    data-nav="Pillar3">
+      <div class="landing__container">
+        <h2>
+          Pillar 3: Inheritance
+        </h2>
+        <p>
+          Inheritance lets one object acquire the properties and methods of another object. In JavaScript this is done by Prototypal Inheritance. Reusability is the main benefit here. We know sometimes that multiple places need to do the same thing, and they need to do everything the same except for one small part. This is a problem inheritance can solve.
+        </p>
+        <p class="display_none_on_mobile">
+        Whenever we use inheritance, we try to make it so that the parent and the child have high cohesion. Cohesion is how related your code is. For example, does the  Bird type extend from the DieselEngine type? Keep your inheritance simple to understand and predictable. Don't inherit from somewhere completely unrelated because there's one method or property you need. Inheritance doesn't fix that particular problem well.
+        </p>
+        <p class="display_none_on_mobile display_block_on_tablet">Developers have a principle called the Liskov Substitution principle. It states that if you can use a parent class (let's call it ParentType) anywhere you use a child (let's call it ChildType), and the ChildType inherits from the ParentType, then you pass the test. When using inheritance, you should require most of the functionality, but, you don't always need absolutely everything. The main reason you would fail this test, is if the ChildType is removing things from the parent. If ChildType removed methods it inherited from the parent, it'd lead to TypeError's where things are undefined that you are expecting not to be.
+        </p>
+        <p class="display_none_on_mobile">Inheritance chain is the term used to describe the flow of inheritance from the base object's prototype (the one that everything else inherits from) to the "end" of the inheritance chain (the last type that is inheriting).
+        </p>         
+      </div>
+    </section>
+
+    <section id="section4"
+    data-nav="Pillar4">
+      <div class="landing__container">
+        <h2>
+            Pillar 4: Polymorphism
+        </h2>
+        <p>
+          Polymorphism means "the condition of occurring in several different forms." That's exactly what the fourth and final pillar is concerned with ... types in the same inheritance chains being able to do different things. Polymorphism, in the traditional sense, is that you have multiple methods with the same name.
+        </p>
+        <p class="display_none_on_mobile">
+          If you have used inheritance correctly you can now reliably use parents like their children. When two types share an inheritance chain, they can be used interchangeably with no errors or assertions in your code. The real power of polymorphism is sharing behaviours and allowing custom overrides.
+        </p>        
+        <p class="display_none_on_mobile">
+           Anyway at the end of the day polymorphism is when you have different classes that shares the aspect but not the behavior so they have a method with the same name, possibly the same arguments and possibly the same return type, with a different implementation, and you can use them interchangeably. Let's take a gun, a drill and and an electric screwdriver, they all share the aspect trigger but if you pull the trigger they all behave differently
+        </p>              
+      </div>
+    </section>
+        
+    <section id="section5"
+    data-nav="Summary">
+      <div class="landing__container">
+        <h2>
+          The Summary 
+        </h2>
+        <p class="display_none_on_mobile">
+          So ... is JavaScript Object Oriented Programming or functional? JavaScript can function as both a procedural and an object oriented language. Objects are created programmatically in JavaScript by attaching methods and properties to otherwise empty objects at run time. This is opposed to the syntactic class definitions common in compiled languages like C++ and Java. 
+        </p>
+        <p>
+        </h2>
+        <p>
+          The Four Pillars of Object-Oriented Programming written by Kealan Parr.
+          I hope this has explained what the four pillars of object-oriented programming are, and how they lead to cleaner and more robust code. To read the entire blog by Kealan, <a target="_blank" href="https://www.freecodecamp.org/news/four-pillars-of-object-oriented-programming/">click here: Kealan Parr.</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+    <footer class="page__footer">
+        <!-- <p>&copy CAN YOU NAME 4 PHASES OF THE MOON'S CYCLE ... FEND APRIL 2022</p> -->
+        <p>
+          &copy Udacity's Project #4-Landing Page
+        </p>         
+        <p class="display_none_on_mobile">
+          Front End Developer Nanodegree, April 2022
+        </p> 
+    </footer>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="js/app.js"></script>
+
+  </body>
+</html>
