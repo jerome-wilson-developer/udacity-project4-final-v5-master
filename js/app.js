@@ -1,6 +1,4 @@
 
-/***use jquery's .ready method to load all assets before tne page loads.*/
-$(document).ready(function() {
 
 /***Define Global Variables.*/
 /*grab the list items.*/
@@ -99,5 +97,3 @@ const smoothScroll = () => {
 
 // Scroll to the section clicked by the link.
 smoothScroll();
-
-}); 

@@ -6,7 +6,7 @@ https://udacity-project4-landing-page-v4main.netlify.app/
 
 ## This is a 1-page Landing Page with 5 sections: 
     * The challenges required to build this Landing Page adds to the user having a great User Experience while using this app. 
-    * This project included a challenging task to virtually create the navigation elements in the DOM instead of hardcoding the list items and anchor tags in index.html. 
+    * This project included a challenging task to dynamically create the navigation elements in the DOM instead of hardcoding the list items and anchor tags in index.html. 
     * Other challenges were to highlight the active section on the page, along with the corresponding active list item, so that the user always knows exactly which section they are reading. 
     * Also, whenever the user clicks a list item, this project required code that allowed the viewport to scroll smoothly from section to section.  
 
@@ -18,7 +18,7 @@ This bootcamp is a coding scholarship program financed by Google to increase the
 - I am required to convert this project from a static project to an interactive one. 
 - That requires modifying the files to make this application interactive and dynamic.
 
-### The files used for this project are:
+### The technologies used for this project are:
     * HTML
     * CSS
     * but the majority of added files are JavaScript.
@@ -37,6 +37,7 @@ This bootcamp is a coding scholarship program financed by Google to increase the
 
 ### The Research for this project included:    
     * Guidance from my weekly Session Leader - Rockwell, different Slack Leaders, and suggestions from the project reviewers    
+    # The blog content for this project is taken from a blog by Kealan Parr called The Four Pillars of Object-Oriented Programming.
     * Google browser's Inspect Elements and Dev Page Source tools
     * YouTube walkthroughs, freeCodeCamp, etc
     * YouTube tutorials such as Kevin Powell, Brad Traversy, Cifer, etc.
